@@ -1,0 +1,77 @@
+# =========================
+# 📁 Allgemein
+# =========================
+*.class
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
+*.rej
+*.swo
+*.DS_Store
+Thumbs.db
+
+# =========================
+# 🔧 Gradle
+# =========================
+.gradle/
+build/
+!gradlew
+!gradlew.bat
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradle.properties
+!build.gradle
+!settings.gradle
+!*.gradle.kts
+
+# =========================
+# 💻 IDEs
+# =========================
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VSCode
+.vscode/
+
+# =========================
+# 📦 Minecraft spezifisch
+# =========================
+run/
+out/
+bin/
+tmp/
+logs/
+*.jar
+
+# =========================
+# 📜 Doku & Metadaten (immer erlaubt)
+# =========================
+!.gitignore
+!README.md
+!LICENSE*
+!.gitattributes
+
+# =========================
+# 🎨 Ressourcen
+# =========================
+# Erlaube Ressourcenordner
+!/src/
+!/textures/
+
+# =========================
+# ✏️ Gemeinsame Arbeit
+# =========================
+gimp/minecraft_texurepacks/*
+!gimp/minecraft_texurepacks/1.21.1.zip
+
+# Ignoriere temporäre Generator-Caches
+src/generated/resources/.cache/
