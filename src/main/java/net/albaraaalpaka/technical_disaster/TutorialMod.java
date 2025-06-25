@@ -1,6 +1,7 @@
-package net.albaraa.tutorialmod;
+package net.albaraaalpaka.technical_disaster;
 
 import com.mojang.logging.LogUtils;
+import net.albaraaalpaka.technical_disaster.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -21,7 +22,7 @@ import org.slf4j.Logger;
 @Mod(TutorialMod.MOD_ID)
 public class TutorialMod {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "tutorialmod";
+    public static final String MOD_ID = "technical_disaster";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -45,8 +46,9 @@ public class TutorialMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.SILICON);
             event.accept(ModItems.RAW_SILICON);
+            event.accept(ModItems.SILICON_NUGGET);
+            event.accept(ModItems.SILICON_INGOT);
         }
     }
 
